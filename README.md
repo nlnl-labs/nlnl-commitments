@@ -1,6 +1,6 @@
 # nlnl-commitments
 
-Public fingerprints for the instruments NL;NL measures with.
+Public fingerprints for the instruments **NL;NL** measures with. Maintained by NL;NL Labs.
 
 **No questions live in this repo, and none will while an instrument is in service.**
 
