@@ -1,0 +1,15 @@
+{
+  "instrument": "battery_v2",
+  "n_items": 63,
+  "battery_hash": "6c06eb73cdb4a7059c9ade322925b579796cf8a1a1083a02ed961adc3d198034",
+  "hash_algorithm": "sha256",
+  "hash_input": "canonical items JSON, see RECIPE.md. This is NOT the sha256 of the file.",
+  "battery_created_utc": "2026-07-11T02:18:39.606163+00:00",
+  "version": "v2",
+  "supersedes": {
+    "version": "v1",
+    "battery_hash": "b9177f4771fd6984d7a5af88ec420ae2924dd4a29c50ead1f9e391343096eb8a",
+    "n_items": 52
+  },
+  "first_published_observation": "2026-07-11"
+}

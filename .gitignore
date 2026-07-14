@@ -1,0 +1,3 @@
+*.json
+!battery_v2.commitment.json
+battery_v2.json
