@@ -1,3 +1,6 @@
 *.json
 !battery_v2.commitment.json
 battery_v2.json
+
+# ots verifier venv, not part of the commitment
+.venv-ots/

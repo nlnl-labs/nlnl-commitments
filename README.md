@@ -61,24 +61,50 @@ We would rather say this plainly than let you discover it.
   `6c06eb73…034`, we changed the questions and lied about it, and you will be able to prove it in
   one command. See [`REVEAL.md`](REVEAL.md).
 
-## The three things this does not prove
+## The timestamp: how to check the date without trusting us
 
-**1. We own this repository and could force-push it.** A hash published only on infrastructure we
-control is an assertion, not a commitment. This is the weakness, we know it is the weakness, and
-closing it is the next thing we do.
+`battery_v2.commitment.json.ots` is an [OpenTimestamps](https://opentimestamps.org) proof. It
+anchors this commitment into the Bitcoin blockchain.
+
+```
+$ ots verify battery_v2.commitment.json.ots
+```
+
+That tells you this exact file, containing this exact hash, **existed on or before a specific
+Bitcoin block**. We cannot rewrite Bitcoin. So even though we control this repository and could
+force-push it, **we cannot move the date.**
+
+What it proves is narrow and we will not dress it up: **the commitment existed by then.** It says
+nothing about whether the questions are any good, and nothing about whether we ran them.
+
+## The four things this does not prove
+
+**1. The anchor is dated later than the first observations.** We stamped it on **14 July 2026**.
+The first four days of published data (**11 to 14 July**) therefore **predate the anchor**. For
+those four days the commitment rests on our own git history and our own run logs, which we will
+open at reveal. **From the anchor forward it is airtight. For those four days, it is our word.**
+Nobody else in this space would tell you that. That is why we are telling you.
 
 **2. The freeze timestamp is our own record.** Our logs say `battery_v2` was created at 02:18:39
-UTC on 11 July and that the first measured item ran at 07:30:24 UTC the same morning. Every
-logged row of every run since carries this hash and no other. The run itself recomputes the hash
-from the questions before it starts and aborts if it does not match, so we cannot edit the
-battery without the instrument refusing to run. But all of that is our code and our logs. Until
-the hash is anchored somewhere we do not control, the date rests on our word.
+UTC on 11 July and that the first measured item ran at 07:30:24 UTC the same morning, five hours
+and eleven minutes later. Every logged row of every run since carries this hash and no other. The
+run recomputes the hash from the questions before it starts and **aborts if it does not match**,
+so we cannot edit the battery and quietly keep measuring. But that is our code and our logs.
 
 **3. There was a `battery_v1`.** It had 52 items and was created 45 minutes earlier the same
 morning. It produced **zero logged rows** and appears in **no published number**. It was
 superseded before the first measurement existed. We are telling you this unprompted because it is
 named in the commitment file, and a rating agency whose first record is preceded by a discarded
 instrument should say so out loud rather than wait to be asked.
+
+**4. ★ We do not prove the measurements happened at all.** Nothing here proves what we sent to the
+API or what came back. OpenAI does not sign its responses, so there is no cryptographic path from
+their servers to this page. In principle we could be inventing every number.
+
+**Neither can anyone else, and that is the part worth your attention.** Not one public AI
+evaluator cryptographically proves the numbers they publish. They ask you to trust them, and they
+do not mention that they are asking. We are telling you where our proof stops, because a rating
+agency that hides its own limits is just one more organisation asking to be trusted.
 
 ## Why the questions stay sealed
 
