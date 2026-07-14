@@ -77,6 +77,12 @@ force-push it, **we cannot move the date.**
 What it proves is narrow and we will not dress it up: **the commitment existed by then.** It says
 nothing about whether the questions are any good, and nothing about whether we ran them.
 
+**Status: submitted 14 July 2026, awaiting Bitcoin confirmation.** Until a block confirms it,
+`ots verify` reports `Pending confirmation in Bitcoin blockchain` and the proof rests on the
+calendar servers rather than on Bitcoin itself. We will commit the completed proof the moment it
+lands. **If you are reading this long after 14 July and it still says pending, we did not follow
+through, and you should hold that against us.**
+
 ## The four things this does not prove
 
 **1. The anchor is dated later than the first observations.** We stamped it on **14 July 2026**.
