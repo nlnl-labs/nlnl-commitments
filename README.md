@@ -107,21 +107,6 @@ instrument should say so out loud rather than wait to be asked.
 API or what came back. OpenAI does not sign its responses, so there is no cryptographic path from
 their servers to this page. In principle we could be inventing every number.
 
-**Neither can anyone else, and that is the part worth your attention.** We went looking. Across the
-major public AI benchmarks and leaderboards, including LMArena, Epoch AI, METR, HELM, LiveBench,
-Vals AI, ARC-AGI, SWE-bench, Humanity's Last Exam and Hugging Face's Open LLM Leaderboard,
-**we could not find one that cryptographically proves the scores it publishes.** No committed test
-sets, no signed transcripts, no attestation. Trust rests on reputation, private test sets, and at
-best a sandbox you also have to trust.
-
-One distinction, so we are not overstating it: crypto-native projects such as Bittensor's Omron
-subnet and ORA's opML **do** produce real cryptographic proofs, but of a different thing. They
-prove that *one inference call came from a specific model*. That is not the same as proving that
-*a published benchmark score is correct*, and we found nobody doing the second.
-
-**If we have missed one, tell us and we will name it here.** We would rather be corrected in
-public than be wrong in public.
-
 We are telling you where our proof stops because a rating agency that hides its own limits is just
 one more organisation asking to be trusted.
 
