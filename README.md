@@ -1,12 +1,12 @@
 # nlnl-commitments
 
-Public fingerprints for the instruments **NL;NL** measures with. Maintained by NL;NL Labs.
+Public fingerprints for the instruments **NL;NL Labs** measures with.
 
 **No questions live in this repo, and none will while an instrument is in service.**
 
 ## What this is for
 
-NL;NL runs a fixed battery of questions against a pinned model, every day, and publishes what
+NL;NL Labs runs a fixed battery of questions against a pinned model, every day, and publishes what
 moves. That is worth nothing unless two things are true:
 
 1. The questions were fixed **before** the measurements began.

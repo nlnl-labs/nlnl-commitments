@@ -38,7 +38,7 @@ measurable event rather than a matter of taste.
 
 Publish the questions today and any provider can tune against them. Scores would keep moving and
 would stop meaning anything, and the failure would be silent. We would be running an instrument
-that reports numbers and measures nothing, which is precisely the condition NL;NL exists to
+that reports numbers and measures nothing, which is precisely the condition NL;NL Labs exists to
 detect in other people's systems.
 
 The sealed battery is not secrecy for its own sake. It is the only configuration in which the

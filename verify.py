@@ -4,8 +4,8 @@
 Usage:
     python3 verify.py path/to/battery_v2.json
 
-This reimplements, byte-for-byte, the canonicalisation in
-nlnl/meter/meter_lib.py (functions canonical_items_json / battery_hash):
+This reimplements, byte-for-byte, the canonicalisation used by the NL;NL Labs
+meter (functions canonical_items_json / battery_hash in meter_lib.py):
 
   - keep exactly 7 fields per item: id, family, class_label, prompt,
     answer (coerced to str), answer_type, params
