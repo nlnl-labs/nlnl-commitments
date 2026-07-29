@@ -77,11 +77,15 @@ force-push it, **we cannot move the date.**
 What it proves is narrow and we will not dress it up: **the commitment existed by then.** It says
 nothing about whether the questions are any good, and nothing about whether we ran them.
 
-**Status: submitted 14 July 2026, awaiting Bitcoin confirmation.** Until a block confirms it,
-`ots verify` reports `Pending confirmation in Bitcoin blockchain` and the proof rests on the
-calendar servers rather than on Bitcoin itself. We will commit the completed proof the moment it
-lands. **If you are reading this long after 14 July and it still says pending, we did not follow
-through, and you should hold that against us.**
+**Status: confirmed.** Stamped 14 July 2026, confirmed by Bitcoin blocks **958012 to 958060** on
+15 July 2026. `ots verify` no longer reports `Pending`. The proof in this repository is the
+completed one, and you can check it yourself with the command above.
+
+**We were late publishing it, and the earlier version of this paragraph said to hold that against
+us.** The confirmation landed on 15 July. We did not push the completed proof here until 29 July.
+For those fourteen days this repository told you the proof was still pending when it was not.
+Nothing about the anchor or its date changed in that window, and the delay was ours, not
+Bitcoin's. We are leaving this note here rather than quietly swapping the file.
 
 ## The four things this does not prove
 
