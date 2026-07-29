@@ -4,3 +4,10 @@ battery_v2.json
 
 # ots verifier venv, not part of the commitment
 .venv-ots/
+!swap.commitment.json
+!time_of_day.commitment.json
+!repeat.commitment.json
+!refusal.commitment.json
+!long_memory.commitment.json
+!tokenizer.commitment.json
+!or_gateway_probes_v1.commitment.json

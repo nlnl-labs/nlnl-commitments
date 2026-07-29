@@ -1,0 +1,16 @@
+{
+  "instrument": "long_memory",
+  "n_items": 4,
+  "battery_hash": "d48ad81a1fde82c1e060581e1713f85b7b19b06b4033e6a0850cf7b7830a5cd2",
+  "hash_algorithm": "sha256",
+  "hash_input": "canonical items JSON, the same recipe as the exam battery, see RECIPE.md. This is NOT the sha256 of the file.",
+  "source_file": "sensor_long_memory_v1.json",
+  "instrument_sealed_utc": "2026-07-15T13:48:24+00:00",
+  "instrument_sealed_reference": "git commit 5164c47 in the NL;NL repository, which is the commit that first wrote this hash into FROZEN_HASHES in meter/battery_runner.py",
+  "source_file_created_utc": "2026-07-29T06:01:44.487184+00:00",
+  "committed_after_measurement_began": true,
+  "publicly_committed_utc": "2026-07-29T06:40:12+00:00",
+  "version": "v1",
+  "note": "This instrument was sealed on 2026-07-15 and has been enforced from that date: the runner recomputes this hash from the item generators before every run and refuses to log anything if it differs. But the public commitment is this file, and this file only exists from 2026-07-29. The instrument was frozen and already measuring for fourteen days before it was publicly committed. The exam battery was committed before its first observation; this one was not. For that fourteen day gap the seal rests on our own code and our own git history, not on a public timestamp, and you should weigh it accordingly.",
+  "note_on_created_utc": "The created_utc field inside sensor_long_memory_v1.json records when that file was last regenerated from the sealed generators, not when the instrument was frozen. The generators are deterministic, so regenerating reproduces the same items and the same hash. The sealed date above is the git date, which is the earlier and the honest one."
+}

@@ -1,0 +1,15 @@
+{
+  "instrument": "or_gateway_probes_v1",
+  "n_probes": 36,
+  "file_hash": "34fb446cf8afc8cdf9ba104b8a90ba6f3e19158251d722b5c69e00c5fecb565f",
+  "hash_algorithm": "sha256",
+  "hash_input": "the whole file, raw bytes: sha256(bytes of or_gateway_probes_v1.json). This is NOT the canonical items recipe in RECIPE.md, which is what every other commitment in this repository uses. See RECIPE.md for that recipe, and read this line as the exception to it.",
+  "source_file": "or_gateway_probes_v1.json",
+  "instrument_sealed_utc": "2026-07-23T05:41:52+00:00",
+  "instrument_sealed_reference": "git commit efa6842 in the NL;NL repository, the commit that added meter/or_gateway_probes_v1.json. It is the only commit that has ever touched that file.",
+  "committed_after_measurement_began": true,
+  "publicly_committed_utc": "2026-07-29T06:40:12+00:00",
+  "version": "v1",
+  "note_on_recipe": "This is the one file here hashed a different way from all the others. The probe set carries no per-run calibration fields, so there is nothing to strip and no reason to canonicalise: the bytes are the instrument. A consequence is that this file cannot carry its own hash the way a battery does, because writing the hash into it would change the bytes. The hash lives here instead, and verify.py takes it as an argument.",
+  "note": "This probe set was sealed on 2026-07-23 and has been enforced from that date. But the public commitment is this file, and this file only exists from 2026-07-29. The instrument was frozen and already monitoring for six days before it was publicly committed. The exam battery was committed before its first observation; this one was not. For that six day gap the seal rests on our own code and our own git history, not on a public timestamp, and you should weigh it accordingly."
+}
